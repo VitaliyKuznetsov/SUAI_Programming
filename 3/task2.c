@@ -50,8 +50,8 @@ int compare(const void* a, const void* b)
     int a_val = (a_char - '0');
     int b_val = (b_char - '0');
     if ( a_val == b_val ) return 0;
-    else if ( a_val < b_val ) return -1;
-    else return 1;
+    else if ( a_val < b_val ) return 1;
+    else return -1;
 }
 int main() {
     char* result = malloc(5);
